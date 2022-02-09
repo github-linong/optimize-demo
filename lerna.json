@@ -1,0 +1,11 @@
+{
+    "packages": [
+        "packages/*",
+        "apps/*",
+        "@component/*",
+        "@ln-util/*",
+        "component/*"
+    ],
+    "npmClient": "yarn",
+    "version": "0.0.0"
+}
