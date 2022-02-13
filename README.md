@@ -44,11 +44,14 @@ optimize-demo。 项目优化实战
     - a.js 可以看到是一个 4.6M 的 js 文件。使用 `tar -zcvf a.js.tar.gz a.js` 压缩，我们可以看到文件会变得非常小。（相同的内容压缩更高）
     - 图片测试组（图片大小（文件大小） vs 图片大小（图片宽高））
         png 纯色文件会非常小，比 jpg 小很多。
-        bmp 纯色和多色文件大小一致。（100 * 100 * 3 = 29KB 左右）
+        bmp 纯色和多色文件大小一致。（100 * 100 * 3 = 29KB 左右，宽 * 高 * RGB）
         jpg 多色文件会比 png 小一些。
+        所以单纯在体积上说，我们可以根据图片选择一个最小的格式。但是在使用的时候我门还要关注体积
         - [一张图片仅1M左右，但可以直接让浏览器卡死、CPU拉满，想深入了解原因](https://segmentfault.com/q/1010000041337045?utm_source=sf-homepage)
+- vue-import-demo4 这个 demo 我们来看一下异步组件的使用，以及 v-show vs v-if。
+    - 使用 v-show 的异步组件 EditorMD.js 和 EditorUEdit.js 不管是否可见都会被加载。
+    - 使用 v-if 的异步组件 EditorTextArea.js , 只在显示的时候才动态加载组件。
 
-- v-show vs v-if
 - vue-cli 版本统一
 - ui commonjs 打包问题
 
