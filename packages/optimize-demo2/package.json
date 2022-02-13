@@ -1,5 +1,5 @@
 {
-    "name": "axios-0.24.0",
+    "name": "optimize-demo2",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -7,8 +7,6 @@
         "build": "vue-cli-service build"
     },
     "dependencies": {
-        "axios": "^0.24.0",
-        "element-ui": "^2.15.6",
         "vue": "^2.6.11"
     },
     "devDependencies": {
@@ -19,11 +17,5 @@
         "> 1%",
         "last 2 versions",
         "not dead"
-    ],
-    "sideEffects": [
-        "*.css",
-        "*.less",
-        "*.scss",
-        "./src/public-path.ts"
     ]
 }

@@ -1,23 +1,27 @@
 {
-  "name": "optimize-demo",
-  "version": "1.0.0",
-  "description": "optimize-demo。 项目优化实战",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/github-linong/optimize-demo.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/github-linong/optimize-demo/issues"
-  },
-  "homepage": "https://github.com/github-linong/optimize-demo#readme",
-  "devDependencies": {
-    "lerna": "^4.0.0"
-  }
+    "name": "optimize-demo",
+    "version": "1.0.0",
+    "description": "optimize-demo。 项目优化实战",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/github-linong/optimize-demo.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/github-linong/optimize-demo/issues"
+    },
+    "homepage": "https://github.com/github-linong/optimize-demo#readme",
+    "devDependencies": {
+        "lerna": "^4.0.0"
+    },
+    "dependencies": {
+        "crypto-es": "^1.2.7",
+        "vue": "^2.6.11"
+    }
 }
