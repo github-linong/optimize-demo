@@ -51,9 +51,9 @@ optimize-demo。 项目优化实战
 - vue-import-demo4 这个 demo 我们来看一下异步组件的使用，以及 v-show vs v-if。
     - 使用 v-show 的异步组件 EditorMD.js 和 EditorUEdit.js 不管是否可见都会被加载。
     - 使用 v-if 的异步组件 EditorTextArea.js , 只在显示的时候才动态加载组件。
-    - 比如说我们的下载按钮，是一个*低频功能*，那么我们就不应该在一开始就载入 js-xlsx 和 fileSaverJs 库。我们应该在使用时再载入。
+    - 比如说我们的下载按钮，是一个*低频功能*，那么我们就不应该在一开始就载入 js-xlsx 和 fileSaverJs 库。我们应该在使用时再载入。当然我们也可以选择使用更小的库，比如说导出 xlsx 改成 导出 csv。
+- moment-demo5 这个我们可以看到有好多的文件。但是我们只是执行了一个 format。
 
-- (TODO) moment
 - (TODO) vue-cli 版本统一
 - (TODO) ui commonjs 打包问题
 
@@ -63,5 +63,11 @@ optimize-demo。 项目优化实战
 2. Chrome DevTools Network
 3. `yarn build --report`
 4. Chrome DevTools Performance
+
 ### 解决方法
 1. 消除相同依赖
+    1. axios 共享
+2. 使用小体积的包。 
+    1. 导出 xlsx 改成 导出 csv
+    2. moment 改成 dayjs
+3. 
