@@ -40,10 +40,14 @@ optimize-demo。 项目优化实战
     - ui-import-demo3 项目我们是直接使用了全量库。
     - ui-import-demo3-component 这个地方我们使用了按需引入。（如果项目打包你发现按需引入没有生效，这是因为没有正确配置 babel plugins component。）
     - 这里我们考虑一个场景，项目使用全量库，但是部分依赖使用的是按需，会怎么样？
+- compressed 压缩测试组
+    - a.js 可以看到是一个 4.6M 的 js 文件。使用 `tar -zcvf a.js.tar.gz a.js` 压缩，我们可以看到文件会变得非常小。（相同的内容压缩更高）
+    - 图片测试组（图片大小（文件大小） vs 图片大小（图片宽高））
+        png 纯色文件会非常小，比 jpg 小很多。
+        bmp 纯色和多色文件大小一致。（100 * 100 * 3 = 29KB 左右）
+        jpg 多色文件会比 png 小一些。
+        - [一张图片仅1M左右，但可以直接让浏览器卡死、CPU拉满，想深入了解原因](https://segmentfault.com/q/1010000041337045?utm_source=sf-homepage)
 
-- 图片大小（文件大小） vs 图片大小（图片宽高）
-  - 压缩图片
-    [一张图片仅1M左右，但可以直接让浏览器卡死、CPU拉满，想深入了解原因](https://segmentfault.com/q/1010000041337045?utm_source=sf-homepage)
 - v-show vs v-if
 - vue-cli 版本统一
 - ui commonjs 打包问题
