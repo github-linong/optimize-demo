@@ -70,4 +70,12 @@ optimize-demo。 项目优化实战
 2. 使用小体积的包。 
     1. 导出 xlsx 改成 导出 csv
     2. moment 改成 dayjs
-3. 
+3. 依赖共享 monorepo Lerna yarn。
+    1. peerDependencies
+    2. externals
+4. 摇树优化 tree shaking。默认开启。开启条件？
+5. 分包、异步资源
+    1. config.optimization.splitChunks
+6. 突破并发。
+    1. http2
+    2. 多域名，突破 max: 6
