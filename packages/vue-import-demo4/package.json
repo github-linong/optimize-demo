@@ -8,9 +8,11 @@
   },
   "dependencies": {
     "core-js": "^3.21.0",
+    "js-xlsx": "^0.8.22",
     "markdown-it": "^12.3.2",
     "vue": "^2.6.11",
-    "vuex": "^3.4.0"
+    "vuex": "^3.4.0",
+    "xlsxjs": "0.0.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

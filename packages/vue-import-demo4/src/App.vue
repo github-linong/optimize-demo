@@ -8,6 +8,17 @@
     <button @click="showEditor = 'EditorMD'"> showEditor = 'EditorMD' </button>
     <button @click="showEditor = 'EditorUEdit'"> showEditor = 'EditorUEdit' </button>
     <button @click="showEditor = 'EditorTextArea'"> showEditor = 'EditorTextArea' </button>
+    <hr>
+    <button @click="download">下载</button>
+    <table>
+        <tr>
+          <th v-for="item in 10" :key="item">表头{{item}}</th>
+        </tr>
+
+        <tr v-for="item1 in 10" :key="item1">
+          <th v-for="item2 in 10" :key="item2">内容 {{item1}}.{{item2}}</th>
+        </tr>
+    </table>
   </div>
 </template>
 
@@ -15,13 +26,21 @@
 import HelloWorld from './components/HelloWorld.vue'
 // import EditorMD from './components/Editor-MD.vue'
 // import EditorUEdit from './components/Editor-UEdit.vue'
-
+// import xlsx from 'js-xlsx'
+// console.log('xlsx', xlsx)
 
 export default {
   name: 'App',
   data(){
     return {
       showEditor: 'EditorMD'
+    }
+  },
+  methods:{
+    download(){
+      import('js-xlsx').then((xlsx)=>{
+        console.log('xlsx', xlsx)
+      })
     }
   },
   components: {
