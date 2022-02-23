@@ -7,7 +7,6 @@
 //   render: h => h(App),
 // }).$mount('#app')
 
-<<<<<<< HEAD
 // if (false) {
 //     console.log('lilnong-1', `false`)
 //     const component = await (async() => await
@@ -51,25 +50,11 @@ export default async function testFunction1() {
         console.log('lilnong-1', `localStorage.debug`, component)
     }
 
-=======
-if (false) {
-    console.log('lilnong-1', `false`)
-    const component = await (async() => await
-        import ('./components/a.vue'));
-    console.log('lilnong-1', `false`, component)
-}
 
-if (process.env.NODE_ENV === 'development') {
-    console.log('lilnong-1', `process.env.NODE_ENV === 'development'`)
-    const component = await (async() => await
-        import ('./components/b.vue'));
-    console.log('lilnong-1', `process.env.NODE_ENV === 'development'`, component)
-}
+    if (false) {
+        console.log('lilnong-1', `false-require`)
+        const component = require('./components/g.vue')
+        console.log('lilnong-1', `false-require`, component)
+    }
 
-if (localStorage.debug) {
-    console.log('lilnong-1', `localStorage.debug`)
-    const component = await (async() => await
-        import ('./components/c.vue'));
-    console.log('lilnong-1', `localStorage.debug`, component)
->>>>>>> 24cfdab7b0d3962e0f7a378f4760056a27330ef2
 }
